@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const greeting = () => console.log('Welcome to the Brain Games!\n');
+import { greeting } from './index.js';
 
-export default greeting;
+greeting();

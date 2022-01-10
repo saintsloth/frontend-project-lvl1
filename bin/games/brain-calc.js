@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 import cli from '../cli.js';
-import { getRandomInt, miniGame } from '../index.js';
-import greeting from '../brain-games.js';
+import { greeting, getRandomInt, miniGame } from '../index.js';
 
 const game = (name) => {
   console.log('What is the result of the expression?');
