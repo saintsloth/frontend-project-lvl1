@@ -16,7 +16,7 @@ const game = (name) => {
       array.push(arrayFirstNum);
     }
     const numOfHiddenNum = getRandomInt(2, arrayLength);
-    const question = `${array.slice(0, numOfHiddenNum - 1)} .. ${array.slice(numOfHiddenNum)}`;
+    const question = `${array.slice(0, numOfHiddenNum - 1).toString().replaceAll(',', ' ')} .. ${array.slice(numOfHiddenNum).toString().replaceAll(',', ' ')}`;
     const trueAnswer = `${array[numOfHiddenNum - 1]}`;
     if (miniGame(name, question, trueAnswer) === false) return;
   }
