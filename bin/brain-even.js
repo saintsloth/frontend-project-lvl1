@@ -3,9 +3,9 @@
 import readlineSync from 'readline-sync';
 
 const getRandomInt = (min = 1, max = 100) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
+  const ceilMin = Math.ceil(min);
+  const floorMax = Math.floor(max);
+  return Math.floor(Math.random() * (floorMax - ceilMin)) + ceilMin;
 };
 
 const miniGame = (name) => {
@@ -18,16 +18,16 @@ const miniGame = (name) => {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.\nLet's try again, ${name}`);
     return boolean;
   }
-  console.log(`Correct!`);
+  console.log('Correct!');
   return boolean;
-}
+};
 
 const even = (name = 'default Name') => {
-  console.log(`Answer "yes" if the number is even, otherwise answer "no".`);
-  for (let i = 0; i < 3; i++) {
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  for (let i = 0; i < 3; i + 1) {
     if (miniGame(name) === false) return;
   }
-  console.log(`Congratulations, ${name}`)
+  console.log(`Congratulations, ${name}`);
 };
 
 export default even;
