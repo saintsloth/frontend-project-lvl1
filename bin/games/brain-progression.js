@@ -20,7 +20,7 @@ const game = (name) => {
     const trueAnswer = `${array[numOfHiddenNum - 1]}`;
     if (miniGame(name, question, trueAnswer) === false) return;
   }
-  console.log(`\nCongratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 greeting();

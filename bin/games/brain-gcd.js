@@ -23,7 +23,7 @@ const game = (name) => {
     const trueAnswer = `${getTrueAnswer(num1, num2)}`;
     if (miniGame(name, question, trueAnswer) === false) return;
   }
-  console.log(`\nCongratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 greeting();
