@@ -13,7 +13,7 @@ export const miniGame = (name, question, trueAnswer) => {
   const answer = readlineSync.question('Your answer: ');
   const boolean = answer === trueAnswer;
   if (boolean === false) {
-    console.log(`d'${answer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.\nLet's try again, ${name}`);
+    console.log(`d'${answer}' is wrong answer ;(. Correct answer was '${trueAnswer}'.\nLet's try again, ${name}!`);
     return boolean;
   }
   console.log('Correct!');
