@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import cli from './cli.js';
-import even from './brain-even.js';
+const greeting = () => console.log('Welcome to the Brain Games!\n');
 
-const name = cli();
-even(name);
+export default greeting;
