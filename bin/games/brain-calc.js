@@ -14,7 +14,7 @@ const game = (name) => {
     const trueAnswer = `${eval(question)}`;
     if (miniGame(name, question, trueAnswer) === false) return;
   }
-  console.log(`Congratulations, ${name}`);
+  console.log(`\nCongratulations, ${name}`);
 };
 
 greeting();

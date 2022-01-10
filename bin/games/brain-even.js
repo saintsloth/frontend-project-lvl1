@@ -10,7 +10,7 @@ const game = (name) => {
     const trueAnswer = question % 2 === 0 ? 'yes' : 'no';
     if (miniGame(name, question, trueAnswer) === false) return;
   }
-  console.log(`Congratulations, ${name}`);
+  console.log(`\nCongratulations, ${name}`);
 };
 
 greeting();
