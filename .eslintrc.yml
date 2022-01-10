@@ -11,6 +11,5 @@ rules: {
   import/extensions: off,
   import/no-unresolved: off,
   import/no-named-as-default: off,
-  import/no-named-as-default-member: off,
-  no-eval: off
+  import/no-named-as-default-member: off
 }

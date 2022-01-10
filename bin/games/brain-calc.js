@@ -11,7 +11,22 @@ const game = (name) => {
     const operatorArray = ['+', '-', '*'];
     const randomOperator = operatorArray[Math.floor(Math.random() * operatorArray.length)];
     const question = `${num1} ${randomOperator} ${num2}`;
-    const trueAnswer = `${eval(question)}`;
+    let trueAnswer;
+    switch (randomOperator) {
+      case '+': {
+        trueAnswer = (num1 + num2).toString();
+        break;
+      }
+      case '-': {
+        trueAnswer = (num1 - num2).toString();
+        break;
+      }
+      case '*': {
+        trueAnswer = (num1 * num2).toString();
+        break;
+      }
+      default: break;
+    }
     if (miniGame(name, question, trueAnswer) === false) return;
   }
   console.log(`Congratulations, ${name}!`);
