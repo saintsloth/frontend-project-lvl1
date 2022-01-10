@@ -4,7 +4,7 @@ import cli from '../cli.js';
 import { getRandomInt, miniGame } from '../index.js';
 import greeting from '../brain-games.js';
 
-const even = (name) => {
+const game = (name) => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const question = getRandomInt();
@@ -16,4 +16,4 @@ const even = (name) => {
 
 greeting();
 const name = cli();
-even(name);
+game(name);

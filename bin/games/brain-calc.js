@@ -4,8 +4,8 @@ import cli from '../cli.js';
 import { getRandomInt, miniGame } from '../index.js';
 import greeting from '../brain-games.js';
 
-const calc = (name) => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const game = (name) => {
+  console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
     const num1 = getRandomInt();
     const num2 = getRandomInt();
@@ -20,4 +20,4 @@ const calc = (name) => {
 
 greeting();
 const name = cli();
-calc(name);
+game(name);
