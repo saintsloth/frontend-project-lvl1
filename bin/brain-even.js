@@ -24,7 +24,7 @@ const miniGame = (name) => {
 
 const even = (name = 'default Name') => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  for (let i = 0; i < 3; i + 1) {
+  for (let i = 0; i < 3; i = i + 1) {
     if (miniGame(name) === false) return;
   }
   console.log(`Congratulations, ${name}`);
